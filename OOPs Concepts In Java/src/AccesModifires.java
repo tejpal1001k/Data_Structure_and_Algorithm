@@ -11,8 +11,20 @@ public class AccesModifires {
             obj.display2();
             //Procted
             obj.display3();
+            add(10, 20);
 
         }
+
+
+        // Static method
+        public static void add(int a, int b) {
+            int sum = a + b;
+            System.out.println(sum);
+        }
+
+
+
+
 
 }
 class Example{
