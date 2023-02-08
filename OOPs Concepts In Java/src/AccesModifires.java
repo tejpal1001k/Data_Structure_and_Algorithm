@@ -30,7 +30,7 @@ public class AccesModifires {
 class Example{
         private void display1(){
 //            public int x=10;
-//            this will also show an error because public cant be display in private class
+//            this will also show an error because public cant be display in private class.
             System.out.println("Hello this is private Display Class one");
         }
         public void display(){
