@@ -1,37 +1,84 @@
-package ArrayPractice;
+package ArrayPractice;//package ArrayPractice;// JAVA program for the above approach
+//import java.util.*;
+//
+//public class Q1 {
+//
+//    static void printSubStrings(String str, String s) {
+//
+//        // First loop for starting index
+//        for (int i = 0; i < str.length(); i++) {
+//            String subStr = "";
+//
+//            // Second loop is generating sub-String
+//            for (int j = i; j < str.length(); j++) {
+//                subStr += str.charAt(j);
+//                if (s == "YES" && substr != "YES" || s == "se" && substr != "se" || s == "Yess" && substr = "Yess") {
+//
+//                    System.out.println("YES");
+//
+//                }
+//            }
+//            System.out.prinln("No");
+//        }
+//
+//// Driver Code
+//        public static void main(String[]args)
+//        {
+//            String str1 = "YesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYes";
+//            Scanner sc = new Scanner(System.in);
+//            int t = sc.nextInt();
+//            while (t-- > 0) {
+//                String st = sc.next();
+//                printSubStrings(str1, st);
+//            }
+//        }
+//    }
+//}
+//
+//// This code is contributed by gauravrajput1
 
-/* package codechef; // don't place package name! */
+// Java program to print all possible
+// subStrings of a given String
+// without checking for duplication.
+import java.io.*;
+import java.util.Objects;
+import java.util.Scanner;
 
-import java.util.*;
-        import java.lang.*;
-        import java.io.*;
-        import java.util.Arrays;
+public class Q1{
 
-/* Name of the class has to be "Main" only if the class is public. */
-class Q1
-{
-    public static void main (String[] args) throws java.lang.Exception
+    // Function to print all (n * (n + 1)) / 2
+// subStrings of a given String s of length n.
+    public static String printAllSubStrings(String str,int n,String s)
     {
-        Scanner sc=new Scanner (System.in);
-        int t=sc.nextInt();
-        while(t>0){
-            int n=sc.nextInt();
-            long []arr=new long[n];
-            for(int i=0;i<n;i++){
-                arr[i]=sc.nextLong();
+        for (int i = 0; i < str.length(); i++) {
+        String subStr="";
 
-            }
-            int count=0;
-            for(int i=0;i<n-1;i++){
-                if(arr[i]!=arr[i+1]){
-                    if(i==0){
-                        count =count +1;
-                    }
-                    count=count +2;
+        // Second loop is generating sub-String
+        for (int j = i; j < str.length(); j++) {
+            subStr += str.charAt(j);
+//            System.out.print(subStr +"\n");
+            if (Objects.equals(s, "Yes") && !subStr.equals("YES") || Objects.equals(s, "se") && !subStr.equals("se") ) {
+
+                    return "YES";
+
                 }
-            }
-            System.out.println(count);
-            t--;
+        }
+    }
+        return "No";
+    }
+
+    // Driver code
+    public static void main(String[] args)
+    {
+        String s = "YesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYesYes";
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t-->0) {
+            String st=sc.next();
+            System.out.println(printAllSubStrings(s, s.length(),st));
         }
     }
 }
+
+// This code is contributed by avanitrachhadiya2155
+
