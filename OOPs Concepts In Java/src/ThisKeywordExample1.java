@@ -1,6 +1,6 @@
 public class ThisKeywordExample1 {
     ThisKeywordExample1(){
-        System.out.println("Hy, I am defaukt constructor");
+        System.out.println("Hy, I am default constructor");
     }
 
     void show(){
