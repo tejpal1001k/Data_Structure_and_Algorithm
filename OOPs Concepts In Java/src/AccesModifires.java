@@ -31,10 +31,10 @@ class Example{
         private void display1(){
 //            public int x=10;
 //            this will also show an error because public cant be display in private class.
-            System.out.println("Hello this is private Display Class one");
+            System.out.println("Hello this is private Display Class1 one");
         }
         public void display(){
-            System.out.println("Hello this is public Display Class one");
+            System.out.println("Hello this is public Display Class1 one");
         }
 
         //*********** Default access modifier *******
@@ -44,7 +44,7 @@ class Example{
     If we attempt to access the default data members and methods from outside the package,
     the compiler will generate a compile-time error. Have a look at the example below.  */
          void display2(){
-            System.out.println("Hello this is Default Display Class ");
+            System.out.println("Hello this is Default Display Class1 ");
         }
         /*iii) protected The protected access modifier allows access of data members and methods inside the same package and outside the package through inheritance. We'll learn about inheritance later.*/
     protected  void display3(){

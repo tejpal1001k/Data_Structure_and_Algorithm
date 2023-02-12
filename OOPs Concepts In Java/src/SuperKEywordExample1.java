@@ -3,7 +3,7 @@ class Class{
         System.out.println("Parent class default Constructor");
     }
 }
-class Student extends Class{
+class Student extends Class1 {
     Student(){
         super();            //Invoke parent class constructor
         System.out.println("sub class constructor");

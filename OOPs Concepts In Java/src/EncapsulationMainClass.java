@@ -10,6 +10,11 @@ public class EncapsulationMainClass {
         c.setName(sc.nextLine());
 
         System.out.println("ID: " + c.getId1());
+        /*
+        these are only methods you can name anything you want
+         */
+        System.out.println("ID: " + c.setId());
+
         System.out.println("Name: " + c.getName());
 
     }

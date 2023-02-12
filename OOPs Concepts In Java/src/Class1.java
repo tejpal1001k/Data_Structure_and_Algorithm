@@ -1,6 +1,9 @@
 public class Class1 {
     private int id;
     private String name;
+    public int setId(){
+        return id;
+    }
     public int getId1(){
         return id;
     }
